@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Kern;
+  src: url(assets/font/KERN\ Regular.ttf);
+}
+
+h3 {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  color: #3e3e3e;
+  margin: 0px 0px 30px;
+}
+
+h6 {
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #6f6f6f !important;
+  font-weight: 400 !important;
+  margin-top: 120px !important;
+}
+
+.div {
+  padding: 32px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #dcdce0;
+  box-sizing: border-box;
+  border-radius: 17px;
+  margin: 0px 32px 0 0;
+}
+
+.smallDiv {
+  padding: 32px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #dcdce0;
+  box-sizing: border-box;
+  border-radius: 17px;
+  margin: 0px 0px 32px;
+}
+
+.smallDiv h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #3e3e3e;
+  margin: 0px 0px 30px;
+}
+
+.formLabel {
+  /* font-family: "Kern"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 12px 0px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 16px;
+  background: #f7f9fa;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  margin: 6px 0px;
+}
+
+.link {
+  display: block;
+  text-align: end;
+  margin: 8px 0px;
+}
+
+.link a {
+  color: #000000 !important;
+  /* font-family: Kern; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.cont {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000000;
+}
+
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #4a4b57;
+}
+
+.cont input:checked ~ .checkmark {
+  background-color: #4a4b57;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.cont .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.select {
+  width: 100%;
+  background: #f7f9fa;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 8px 16px;
+  margin: 6px 0px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(0, 0, 0, 0.3)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  color: #6f6f6f;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.socialDiv {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dcdce0;
+  box-sizing: border-box;
+  border-radius: 17px;
+  margin: 32px 0px;
+  padding: 32px;
+}
+
+.websiteInp {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #f7f9fa;
+  padding: 8px 16px;
+}
+
+.round {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 9px 18px -10px rgba(0, 0, 0, 0.5);
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #6f6f6f;
+}
+
+.actionBtn {
+  display: flex;
+}
+
+.table thead tr th {
+  color: #000000;
+  border-bottom: 2px solid var(--bs-gray-300);
+}
+
+.table tbody tr td {
+  border-bottom: 2px solid var(--bs-gray-300);
+}
+
+.table tbody td {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.table button {
+  background-color: transparent !important;
+  border: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .div {
+    width: 100%;
+  }
+
+  .smallDiv {
+    width: 100%;
+  }
+}
